@@ -111,8 +111,8 @@
   /* Hover */
   .cta-knap:hover {
     transform: translateY(-2px);
-    background: #a8c5a8;
-    color: white;
+    background: #f7f9f7;
+    color: #6e9770;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
   }
 
