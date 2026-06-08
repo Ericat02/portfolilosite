@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/kontakt.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="../logo/logo.png" width="90" height="90" alt="Logo bestående af E og et T " /></a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="form-section">
+        <h1>HAR DU SPØRGSMÅL?</h1>
+
+        <form id="contact-form" action="send-en-mail" method="POST">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Din email" required />
+
+          <label for="subject">Emne</label>
+          <input type="text" id="subject" name="subject" placeholder="Emne" required />
+
+          <label for="message">Besked</label>
+          <textarea id="message" name="message" rows="10" placeholder="Skriv din besked..." required></textarea>
+
+          <button type="submit">Send besked</button>
+        </form>
+      </section>
+
+      <p id="status" class="hidden">✔ Besked sendt!</p>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <a target="_blank" href="https://www.linkedin.com/in/erica-thygesen-7005712b6/?skipRedirect=true"><img src="../billeder/linkedin-removebg-preview.png" alt="" /></a>
+
+        <a target="_blank" href="https://www.facebook.com/"><img src="../billeder/facebook-removebg-preview.png" alt="" /></a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">&#169; Erica Thygesen, Studerende på EK</p>
+      </div>
+    </footer>
+    <script src="../javascript/form.js"></script>
+  </body>
+</html>

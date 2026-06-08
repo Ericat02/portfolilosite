@@ -1,0 +1,149 @@
+/* Computerformat */
+@media (width >800px) {
+  h1 {
+    font-family: poppins;
+    color: #313131;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: poppins;
+  }
+
+  p {
+    font-family: inter;
+    font-size: 20px;
+  }
+  /* hero */
+  #hero-sektion {
+    position: relative;
+    width: 100%;
+  }
+  #hero-sektion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #tekst-forside {
+    margin: 60px;
+  }
+
+  #tekst-over-header {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-family: poppins;
+    font-size: 2rem;
+    color: #313131;
+  }
+
+  /* cta-knapper */
+  #knapper-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* div {
+      padding-left: 240px;
+      padding-top: 30px;
+    } */
+  }
+  .cta-knap {
+    background-color: #6e9770;
+    color: white;
+    text-decoration: none;
+
+    width: 190px;
+    padding: 10px 20px;
+
+    border-radius: 12px;
+    border: 2px solid #6e9770;
+    align-items: center;
+
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      background-color 0.15s ease;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-knap:hover {
+    /* Hover */
+    transform: translateY(-2px);
+    background: #f7f9f7;
+    color: #6e9770;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .cta-knap::after {
+    padding-left: 20px;
+    content: "→";
+    font-size: 1rem;
+  }
+}
+
+/* mobilformat */
+@media (width <800px) {
+  #hero-sektion {
+    position: relative;
+    width: 100%;
+  }
+
+  #hero-sektion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #tekst-over-header {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-family: poppins;
+    font-size: 15px;
+    color: #313131;
+  }
+
+  #tekst-forside {
+    margin: 40px;
+  }
+
+  .cta-knap {
+    background-color: #6e9770;
+    color: white;
+    text-decoration: none;
+    font-family: lora;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #6e9770;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 145px;
+    height: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      background-color 0.15s ease;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-knap:hover {
+    /* Hover */
+    transform: translateY(-2px);
+    background: #f7f9f7;
+    color: #6e9770;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+  .cta-knap::after {
+    padding-left: 20px;
+    content: "→";
+    font-size: 1rem;
+  }
+}

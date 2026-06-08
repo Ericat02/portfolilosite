@@ -1,0 +1,98 @@
+/* Computerformat */
+@media (width >800px) {
+  .galleri img {
+    display: block;
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .galleri {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #313131;
+    text-align: center;
+    font-size: 30px;
+    font-family: poppins;
+  }
+
+  h2 {
+    font-family: poppins;
+    font-size: 20px;
+    color: #313131;
+  }
+
+  .img-wrapper {
+    position: relative;
+  }
+
+  .img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #a8c5a8;
+    opacity: 45%;
+    border-radius: 12px;
+  }
+}
+
+/* hover effekt, når musen rammer forsvinder det grøne lag og billede hopper en smule */
+.img-wrapper {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover {
+  transform: translateY(-8px);
+}
+
+.img-wrapper:hover::after {
+  opacity: 0;
+}
+
+/* mobilformat */
+@media (width <800px) {
+  .galleri img {
+    width: 459px;
+    height: 290px;
+
+    border-radius: 12px;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #313131;
+  }
+
+  h2 {
+    font-family: poppins;
+    font-size: 17px;
+    margin-left: 40px;
+  }
+
+  .img-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 40px;
+    justify-content: center;
+  }
+
+  .img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #a8c5a8;
+    opacity: 45%;
+    border-radius: 12px;
+  }
+}

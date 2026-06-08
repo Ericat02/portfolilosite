@@ -1,0 +1,45 @@
+main {
+  margin: 30px;
+}
+
+#portræt {
+  width: 500px;
+  height: 600px;
+}
+
+/* Computerformat */
+@media (width >800px) {
+  h1 {
+    text-align: center;
+    color: #313131;
+    font-size: 30px;
+    font-family: poppins;
+    align-items: center;
+  }
+  .ommig-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ommig-sektion img {
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-right: 50px;
+    font-family: inter;
+    font-size: 20px;
+  }
+}
+
+/* mobilformat */
+@media (width <800px) {
+  #portræt {
+    width: 430px;
+    height: 500px;
+  }
+  p {
+    margin: 40px;
+  }
+}
