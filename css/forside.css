@@ -1,3 +1,11 @@
+.desktop-only {
+  display: none;
+}
+
+.mobil-only {
+  display: block;
+}
+
 /* Computerformat */
 @media (width >800px) {
   h1 {
@@ -39,15 +47,55 @@
     color: #313131;
   }
 
+  #tekst-over-header div {
+    width: 190px;
+    padding: 10px 20px;
+    font-family: lora;
+    font-size: 1rem;
+    padding-left: 2px;
+  }
+
+  .cta-knap1 {
+    text-decoration: none;
+    align-items: center;
+
+    background-color: #313131;
+    color: #6e9770;
+    border-radius: 12px;
+    width: 190px;
+    padding: 10px 20px;
+  }
+
+  .cta-knap1::after {
+    padding-left: 20px;
+    content: "→";
+    font-size: 1rem;
+  }
+
+  .cta-knap1:hover {
+    background-color: #a8c5a8;
+    color: #313131;
+    border: 2px solid #313131;
+  }
+
+  /* knap som kunner synlig på computer og knap som kun er synlig på mobil */
+  .desktop-only {
+    display: block;
+  }
+  .mobil-only {
+    display: none;
+  }
+
   /* cta-knapper */
   #knapper-sektion {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* div {
-      padding-left: 240px;
-      padding-top: 30px;
-    } */
   }
+
+  #knapper-sektion div {
+    padding-top: 30px;
+  }
+
   .cta-knap {
     background-color: #6e9770;
     color: white;
@@ -59,20 +107,12 @@
     border-radius: 12px;
     border: 2px solid #6e9770;
     align-items: center;
-
-    transition:
-      transform 0.15s ease,
-      box-shadow 0.15s ease,
-      background-color 0.15s ease;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
-
+  /* Hover */
   .cta-knap:hover {
-    /* Hover */
     transform: translateY(-2px);
-    background: #f7f9f7;
-    color: #6e9770;
+    background: #a8c5a8;
+    color: white;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
   }
 
